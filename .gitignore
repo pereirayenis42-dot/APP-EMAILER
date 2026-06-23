@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+leads.db
+*.xlsx
+*.csv
+*.json
+.env

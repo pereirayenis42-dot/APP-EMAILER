@@ -15,14 +15,59 @@ DB_NAME = "leads.db"
 EMAIL_VALIDATION_ENABLED = True
 EMAIL_VALIDATION_API_KEY = "1ee3212e8a164d2fa52b8d3a29793bf7"
 
+BUSINESS_TYPES = [
+    "Audi repair shop",
+    "Audi specialist",
+    "Audi service center",
+    "European auto repair",
+    "Collision center",
+    "Luxury car repair",
+    "Import auto repair",
+]
+
+CITIES = [
+    "Houston",
+    "Katy",
+    "Sugar Land",
+    "The Woodlands",
+    "Spring",
+    "Cypress",
+    "Pearland",
+    "Missouri City",
+    "League City",
+    "Conroe",
+    "Baytown",
+    "Pasadena",
+    "Friendswood",
+    "Humble",
+    "Tomball",
+    "Galveston",
+    "La Porte",
+    "Deer Park",
+    "Seabrook",
+    "Stafford",
+    "Bellaire",
+    "Richmond",
+    "Clear Lake",
+    "Alvin",
+    "Webster",
+    "Rosenberg",
+    "Montgomery",
+    "Porter",
+    "Cleveland",
+    "Tomball",
+    "Fresno",
+    "Manvel",
+    "Magnolia",
+    "Bammel",
+    "Rosharon",
+    "Shenandoah",
+]
+
 SEARCH_TERMS = [
-    "Audi repair shop Houston",
-    "European auto repair shop Houston",
-    "German auto repair shop Houston",
-    "Volkswagen repair shop Houston",
-    "BMW repair shop Houston",
-    "Mercedes repair shop Houston",
-    "Collision center Houston"
+    f"{business} {city}"
+    for business in BUSINESS_TYPES
+    for city in CITIES
 ]
 
 EMAIL_REGEX = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
