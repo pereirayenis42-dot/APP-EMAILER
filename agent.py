@@ -8,12 +8,12 @@ from urllib.parse import urljoin
 from datetime import datetime
 from openpyxl import Workbook
 
-API_KEY = "AIzaSyCcPxOl2XdEIUy_HDUGqt0e0_lX-FBfraQ"
+API_KEY = "INSERT GOOGLE MAPS API KEY HERE"
 DB_NAME = "leads.db"
 
 # Optional: Email validation API (sign up at zerobounce.io for free tier)
 EMAIL_VALIDATION_ENABLED = True
-EMAIL_VALIDATION_API_KEY = "1ee3212e8a164d2fa52b8d3a29793bf7"
+EMAIL_VALIDATION_API_KEY = "INSERT API KEY HERE"
 
 BUSINESS_TYPES = [
     "Audi repair shop",
